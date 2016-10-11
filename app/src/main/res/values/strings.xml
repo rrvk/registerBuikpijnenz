@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Eten enz meetingen</string>
+
+    <string-array name="drawer_options">
+        <item>@string/nav_eten</item>
+        <item>@string/nav_drinken</item>
+        <item>@string/nav_poep</item>
+        <item>@string/nav_buikpijn</item>
+        <item>@string/nav_overige</item>
+        <item>@string/nav_resultaten_poep</item>
+        <item>@string/nav_resultaten_buikpijn</item>
+    </string-array>
+
+    <string name="nav_eten">Eten</string>
+    <string name="nav_drinken">Drinken</string>
+    <string name="nav_poep">Poepen</string>
+    <string name="nav_buikpijn">Buikpijn</string>
+    <string name="nav_overige">Overige</string>
+    <string name="nav_resultaten_poep">Resultaten Poep</string>
+    <string name="nav_resultaten_buikpijn">Resultaten Buikpijn</string>
+
+    <string name="notification_poep_add">Deze poep melding is opgeslagen</string>
+    <string name="notification_poep_delete">Deze poep melding is verwijderd</string>
+    <string name="notification_poep_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze poep melding</string>
+    <string name="notification_poep_fail_parse">ERROR er is een fout opgetreden bij het parsen van de datum/tijd</string>
+    <string name="notification_poep_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de poep melding is NIET opgeslagen</string>
+
+    <string name="notification_buikpijn_add">Deze buikpijn melding is opgeslagen</string>
+    <string name="notification_buikpijn_delete">Deze buikpijn melding is verwijderd</string>
+    <string name="notification_buikpijn_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze buikpijn melding</string>
+    <string name="notification_buikpijn_add_start">Het begin van deze buikpijn melding is gemaakt, deze moet verder nog afgemaakt worden. De eind tijden moet nog ingevult worden</string>
+    <string name="notification_buikpijn_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de buikpijn melding is NIET opgeslagen</string>
+
+    <string name="database_name">etenEnzMededelingDatabase</string>
+
+    <string name="database_table_poep">MeldingenPoep</string>
+    <string name="database_table_poep_id">Id</string>
+    <string name="database_table_poep_date">Date</string>
+    <string name="database_table_poep_time">Time</string>
+    <string name="database_table_poep_comments">Comments</string>
+    <string name="eind_datum">Eind datum</string>
+    <string name="eind_tijd">Eind tijd</string>
+    <string name="opmerkingen">Opmerkingen</string>
+    <string name="start_datum">Start datum</string>
+    <string name="start_tijd">Start tijd</string>
+
+    <integer name="database_verion">1</integer>
+</resources>

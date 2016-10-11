@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/item_resultaat_poep">
+
+    <ImageView
+        android:id="@+id/poep_resultaten_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:contentDescription="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poep_resultaten_comments"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/poep_resultaten_time"
+        tools:ignore="RelativeOverlap"
+        android:text="Comments" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poep_resultaten_time"
+        android:text="Time"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poep_resultaten_date"
+        android:text="Date"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/poep_resultaten_del"
+        android:layout_toEndOf="@+id/poep_resultaten_del"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+</RelativeLayout>

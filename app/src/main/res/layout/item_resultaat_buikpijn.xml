@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/item_resultaat_buikpijn">
+
+    <ImageView
+        android:id="@+id/buikpijn_resultaten_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/buikpijn_resultaten_start_date"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buikpijn_resultaten_del" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buikpijn_resultaten_start_time"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buikpijn_resultaten_start_date"
+        android:layout_toEndOf="@+id/buikpijn_resultaten_start_date" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buikpijn_resultaten_end_date"
+        android:layout_below="@+id/buikpijn_resultaten_start_date"
+        android:layout_alignLeft="@+id/buikpijn_resultaten_start_date"
+        android:layout_alignStart="@+id/buikpijn_resultaten_start_date" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buikpijn_resultaten_end_time"
+        android:layout_below="@+id/buikpijn_resultaten_start_time"
+        android:layout_alignLeft="@+id/buikpijn_resultaten_start_time"
+        android:layout_alignStart="@+id/buikpijn_resultaten_start_time" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buikpijn_resultaten_comments"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
