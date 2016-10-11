@@ -26,18 +26,14 @@
     <string name="notification_poep_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de poep melding is NIET opgeslagen</string>
 
     <string name="notification_buikpijn_add">Deze buikpijn melding is opgeslagen</string>
-    <string name="notification_buikpijn_delete">Deze buikpijn melding is verwijderd</string>
-    <string name="notification_buikpijn_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze buikpijn melding</string>
     <string name="notification_buikpijn_add_start">Het begin van deze buikpijn melding is gemaakt, deze moet verder nog afgemaakt worden. De eind tijden moet nog ingevult worden</string>
+    <string name="notification_buikpijn_add_start_fail">Je kunt geen nieuwe melding maken als de oude nog niet compleet is, vul deze eerst aan.</string>
+    <string name="notification_buikpijn_delete">Deze buikpijn melding is verwijderd</string>
+    <string name="notification_buikpijn_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze buikpijn melding</string>vvvvvvvvvvvvvv
     <string name="notification_buikpijn_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de buikpijn melding is NIET opgeslagen</string>
 
     <string name="database_name">etenEnzMededelingDatabase</string>
 
-    <string name="database_table_poep">MeldingenPoep</string>
-    <string name="database_table_poep_id">Id</string>
-    <string name="database_table_poep_date">Date</string>
-    <string name="database_table_poep_time">Time</string>
-    <string name="database_table_poep_comments">Comments</string>
     <string name="eind_datum">Eind datum</string>
     <string name="eind_tijd">Eind tijd</string>
     <string name="opmerkingen">Opmerkingen</string>
