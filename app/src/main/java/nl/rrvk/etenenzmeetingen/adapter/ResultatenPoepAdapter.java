@@ -44,6 +44,11 @@ public class ResultatenPoepAdapter extends RecyclerView.Adapter<ResultatenPoepAd
         return poepMeldingen.size();
     }
 
+    /**
+     * this methode will return the meldingenpoep by id
+     * @param id
+     * @return
+     */
     private MeldingenPoep getPoepById(long id) {
         for (Iterator<MeldingenPoep> i = poepMeldingen.iterator(); i.hasNext(); ) {
             MeldingenPoep item = i.next();
@@ -68,9 +73,6 @@ public class ResultatenPoepAdapter extends RecyclerView.Adapter<ResultatenPoepAd
         }
     }
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         View poepResultaatView;

@@ -14,28 +14,21 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.Holder> {
     private static final int DRAWER_TYPE_ITEM = 1;
     private String title;
     private final String[] mNavTitles;
-    //private final TypedArray mNavIcons;
     private View.OnClickListener mListener;
 
-    //public DrawerAdapter(String[] navTitles, TypedArray navIcons, View.OnClickListener listener) {
     public DrawerAdapter(String[] navTitles, View.OnClickListener listener) {
         mNavTitles = navTitles;
-        //mNavIcons = navIcons;
         mListener = listener;
     }
 
-    //public DrawerAdapter(String title, String[] navTitles, TypedArray navIcons, View.OnClickListener listener) {
-    public DrawerAdapter(String title, String[] navTitles, View.OnClickListener listener) {
-        this(navTitles, listener);
-        this.title = title;
-    }
-
+    /**
+     * This is the holder. Each holder = 1 item in the drawer
+     */
     public static class Holder extends RecyclerView.ViewHolder {
         int type;
         TextView titleTextView;
 
         View drawerItem;
-        //ImageView iconImageView;
         TextView itemTextView;
 
         public Holder(View itemView, int viewType, View.OnClickListener listener) {
@@ -45,11 +38,10 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.Holder> {
             if (DRAWER_TYPE_HEADER == viewType) {
                 titleTextView = (TextView) itemView.findViewById(R.id.drawer_header_text);
             } else if (DRAWER_TYPE_ITEM == viewType) {
+                // get the views
                 drawerItem = itemView.findViewById(R.id.drawer_item);
                 itemTextView = (TextView) itemView.findViewById(R.id.drawer_item_text);
-                // todo misschien icon
-                // iconImageView = (ImageView) itemView.findViewById(R.id.drawer_item_icon);
-
+                // add the onclick listener
                 drawerItem.setOnClickListener(listener);
             }
         }
@@ -69,7 +61,6 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.Holder> {
             if (title != null) holder.titleTextView.setText(title);
         } else {
             int position = i - 1;
-            //holder.iconImageView.setImageResource(mNavIcons.getResourceId(position, 0));
             holder.itemTextView.setText(mNavTitles[position]);
         }
     }
@@ -89,9 +80,8 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.Holder> {
         return position == 0;
     }
 
-    public void setHeader(String title){
+    public void setHeader(String title) {
         this.title = title;
         notifyDataSetChanged();
     }
-
 }

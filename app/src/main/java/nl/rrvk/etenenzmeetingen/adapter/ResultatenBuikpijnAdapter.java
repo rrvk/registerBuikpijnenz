@@ -46,6 +46,11 @@ public class ResultatenBuikpijnAdapter extends RecyclerView.Adapter<ResultatenBu
         return buikpijnMeldingen.size();
     }
 
+    /**
+     * With this methode the buikpijnmelding will be find by id
+     * @param id
+     * @return
+     */
     private MeldingenBuikpijn getBuikpijnById(long id) {
         for (Iterator<MeldingenBuikpijn> i = buikpijnMeldingen.iterator(); i.hasNext(); ) {
             MeldingenBuikpijn item = i.next();
@@ -70,9 +75,6 @@ public class ResultatenBuikpijnAdapter extends RecyclerView.Adapter<ResultatenBu
         }
     }
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         View buikpijnResultaatView;

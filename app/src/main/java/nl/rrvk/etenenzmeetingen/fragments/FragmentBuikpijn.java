@@ -33,10 +33,6 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
 
     MeldingenBuikpijn melding = null;
 
-    public void setMeldingenBuikpijn() {
-        //// TODO: 10-10-2016
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_buikpijn, container, false);
@@ -46,6 +42,10 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         return view;
     }
 
+    /**
+     * this methode will check if there is a old registration that is not yet complete
+     * There will be checked if the end date is given or not
+     */
     private void checkOldRegistration() {
         List<MeldingenBuikpijn> meldingenBuikpijn = MeldingenBuikpijn.find(MeldingenBuikpijn.class, "end_Date = ?", "");
         if (meldingenBuikpijn.size()>0){
@@ -63,6 +63,10 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         updateTimeAndDate();
     }
 
+    /**
+     * With this methode the current date and time will be put in the gui
+     * When there is a old registration the end-date/time will be updated
+     */
     private void updateTimeAndDate() {
         Calendar c = Calendar.getInstance();
         if (melding == null) {
@@ -76,6 +80,10 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         }
     }
 
+    /**
+     * With this methode all the fields will be initialised
+     * @param view
+     */
     private void initFields(View view) {
         // start time and date fields
         this.startDateText = (EditText) view.findViewById(R.id.textBuikpijnStartDate);
@@ -97,6 +105,10 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         updateTimeAndDate();
     }
 
+    /**
+     * With this methode there will be checked if there is a end time/date given
+     * @return
+     */
     private boolean checkEndDateAndTime() {
         if (!endDateText.getText().toString().isEmpty() && !endTimeText.getText().toString().isEmpty())
             return true;
@@ -104,6 +116,10 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
             return false;
     }
 
+    /**
+     * With this methode there will be checked if there is a start time/date given
+     * @return
+     */
     private boolean checkStartDateAndTime() {
         if (!startDateText.getText().toString().isEmpty() && !startTimeText.getText().toString().isEmpty())
             return true;
@@ -111,6 +127,9 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
             return false;
     }
 
+    /**
+     * With this methode the start date/time will be updated in the melding
+     */
     private void updateStartDateTime() {
         if (melding == null) {
             melding = new MeldingenBuikpijn();
@@ -120,6 +139,9 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         }
     }
 
+    /**
+     * With this methode the end date/time will be updated in the melding
+     */
     private void updateEndDateTime() {
         if (melding != null) {
             melding.endDate = endDateText.getText().toString();
@@ -128,6 +150,9 @@ public class FragmentBuikpijn extends Fragment implements View.OnClickListener {
         }
     }
 
+    /**
+     * With this methode the fields will be cleared
+     */
     private void clearFields() {
         startDateText.setText("");
         startTimeText.setText("");
