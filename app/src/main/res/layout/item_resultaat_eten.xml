@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/item_resultaat_eten">
+
+    <ImageView
+        android:id="@+id/etenResultaatDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatEtenDate"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/etenResultaatDel"
+        android:layout_toEndOf="@+id/etenResultaatDel" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatEtenTime"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatEtenDate"
+        android:layout_toEndOf="@+id/textResultaatEtenDate" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatEtenName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatEtenTime"
+        android:layout_toEndOf="@+id/textResultaatEtenTime" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatEtenComments"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatEtenName"
+        android:layout_toEndOf="@+id/textResultaatEtenName" />
+
+</RelativeLayout>

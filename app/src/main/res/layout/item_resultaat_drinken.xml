@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/item_resultaat_drinken">
+
+    <ImageView
+        android:id="@+id/drinkenResultaatDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatDrinkenTime"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatDrinkenDate"
+        android:layout_toEndOf="@+id/textResultaatDrinkenDate" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatDrinkenVolume"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatDrinkenTime"
+        android:layout_toEndOf="@+id/textResultaatDrinkenTime" />
+
+    <TextView
+        android:text="milliliter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textResultaatDrinkenVolume"
+        android:layout_toEndOf="@+id/textResultaatDrinkenVolume"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatDrinkenName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatDrinkenDate"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/drinkenResultaatDel"
+        android:layout_toEndOf="@+id/drinkenResultaatDel" />
+
+</RelativeLayout>

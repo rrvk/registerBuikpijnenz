@@ -4,7 +4,7 @@
     android:id="@+id/item_resultaat_buikpijn">
 
     <ImageView
-        android:id="@+id/buikpijn_resultaten_del"
+        android:id="@+id/buikpijnResultaatDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_delete" />
@@ -13,48 +13,47 @@
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:id="@+id/buikpijn_resultaten_start_date"
+        android:id="@+id/textResultaatBuikpijnStartDate"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/buikpijn_resultaten_del" />
+        android:layout_toRightOf="@+id/buikpijnResultaatDel"
+        android:layout_toEndOf="@+id/buikpijnResultaatDel" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buikpijn_resultaten_start_time"
-        android:layout_marginLeft="69dp"
-        android:layout_marginStart="69dp"
+        android:id="@+id/textResultaatBuikpijnStartTime"
+        android:layout_below="@+id/textResultaatBuikpijnStartDate"
+        android:layout_toRightOf="@+id/buikpijnResultaatDel"
+        android:layout_toEndOf="@+id/buikpijnResultaatDel" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultaatBuikpijnEndDate"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/buikpijn_resultaten_start_date"
-        android:layout_toEndOf="@+id/buikpijn_resultaten_start_date" />
+        android:layout_toRightOf="@+id/textResultaatBuikpijnStartDate"
+        android:layout_toEndOf="@+id/textResultaatBuikpijnStartDate" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buikpijn_resultaten_end_date"
-        android:layout_below="@+id/buikpijn_resultaten_start_date"
-        android:layout_alignLeft="@+id/buikpijn_resultaten_start_date"
-        android:layout_alignStart="@+id/buikpijn_resultaten_start_date" />
+        android:id="@+id/textResultaatBuikpijnEndTime"
+        android:layout_below="@+id/textResultaatBuikpijnEndDate"
+        android:layout_toRightOf="@+id/textResultaatBuikpijnStartTime"
+        android:layout_toEndOf="@+id/textResultaatBuikpijnStartTime" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buikpijn_resultaten_end_time"
-        android:layout_below="@+id/buikpijn_resultaten_start_time"
-        android:layout_alignLeft="@+id/buikpijn_resultaten_start_time"
-        android:layout_alignStart="@+id/buikpijn_resultaten_start_time" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buikpijn_resultaten_comments"
-        android:layout_alignParentTop="true"
+        android:id="@+id/textResultaatBuikpijnComments"
+        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
 
 </RelativeLayout>

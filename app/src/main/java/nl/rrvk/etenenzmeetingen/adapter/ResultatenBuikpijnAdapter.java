@@ -88,13 +88,13 @@ public class ResultatenBuikpijnAdapter extends RecyclerView.Adapter<ResultatenBu
         public ViewHolder(View v, View.OnClickListener listener) {
             super(v);
             buikpijnResultaatView = v.findViewById(R.id.item_resultaat_buikpijn);
-            iconImageView = (ImageView) v.findViewById(R.id.buikpijn_resultaten_del);
+            iconImageView = (ImageView) v.findViewById(R.id.buikpijnResultaatDel);
             iconImageView.setOnClickListener(listener);
-            itemBuikpijnStartTime = (TextView) v.findViewById(R.id.buikpijn_resultaten_start_time);
-            itemBuikpijnStartDate = (TextView) v.findViewById(R.id.buikpijn_resultaten_start_date);
-            itemBuikpijnEndTime = (TextView) v.findViewById(R.id.buikpijn_resultaten_end_time);
-            itemBuikpijnEndDate = (TextView) v.findViewById(R.id.buikpijn_resultaten_end_date);
-            itemBuikpijnComments = (TextView) v.findViewById(R.id.buikpijn_resultaten_comments);
+            itemBuikpijnStartTime = (TextView) v.findViewById(R.id.textResultaatBuikpijnStartTime);
+            itemBuikpijnStartDate = (TextView) v.findViewById(R.id.textResultaatBuikpijnStartDate);
+            itemBuikpijnEndTime = (TextView) v.findViewById(R.id.textResultaatBuikpijnEndTime);
+            itemBuikpijnEndDate = (TextView) v.findViewById(R.id.textResultaatBuikpijnEndDate);
+            itemBuikpijnComments = (TextView) v.findViewById(R.id.textResultaatBuikpijnComments);
         }
     }
 

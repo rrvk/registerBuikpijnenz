@@ -6,7 +6,8 @@
         <item>@string/nav_drinken</item>
         <item>@string/nav_poep</item>
         <item>@string/nav_buikpijn</item>
-        <item>@string/nav_overige</item>
+        <item>@string/nav_resultaten_eten</item>
+        <item>@string/nav_resultaten_drinken</item>
         <item>@string/nav_resultaten_poep</item>
         <item>@string/nav_resultaten_buikpijn</item>
     </string-array>
@@ -15,14 +16,24 @@
     <string name="nav_drinken">Drinken</string>
     <string name="nav_poep">Poepen</string>
     <string name="nav_buikpijn">Buikpijn</string>
-    <string name="nav_overige">Overige</string>
     <string name="nav_resultaten_poep">Resultaten Poep</string>
     <string name="nav_resultaten_buikpijn">Resultaten Buikpijn</string>
+    <string name="nav_resultaten_eten">Resultaten Eten</string>
+    <string name="nav_resultaten_drinken">Resultaten Drinken</string>
+
+    <string name="notification_eten_add">Deze eet melding is opgeslagen</string>
+    <string name="notification_eten_delete">Deze eet melding is verwijderd</string>
+    <string name="notification_eten_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze eet melding</string>
+    <string name="notification_eten_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de eet melding is NIET opgeslagen</string>
+
+    <string name="notification_drinken_add">Deze drinken melding is opgeslagen</string>
+    <string name="notification_drinken_delete">Deze drinken melding is verwijderd</string>
+    <string name="notification_drinken_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze drink melding</string>
+    <string name="notification_drinken_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de drink melding is NIET opgeslagen</string>
 
     <string name="notification_poep_add">Deze poep melding is opgeslagen</string>
     <string name="notification_poep_delete">Deze poep melding is verwijderd</string>
     <string name="notification_poep_fail_delete">ERROR er is een fout opgetreden bij het verwijderen van deze poep melding</string>
-    <string name="notification_poep_fail_parse">ERROR er is een fout opgetreden bij het parsen van de datum/tijd</string>
     <string name="notification_poep_fail_fields">ERROR de noodzakelijke velden zijn niet ingevuld, de poep melding is NIET opgeslagen</string>
 
     <string name="notification_buikpijn_add">Deze buikpijn melding is opgeslagen</string>

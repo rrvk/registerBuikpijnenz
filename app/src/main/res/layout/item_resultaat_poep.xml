@@ -5,7 +5,7 @@
     android:id="@+id/item_resultaat_poep">
 
     <ImageView
-        android:id="@+id/poep_resultaten_del"
+        android:id="@+id/resultaatPoepDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_delete"
@@ -14,18 +14,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/poep_resultaten_comments"
+        android:id="@+id/textResultaatPoepcomments"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/poep_resultaten_time"
+        android:layout_alignBottom="@+id/textResultaatPoeptime"
         tools:ignore="RelativeOverlap"
         android:text="Comments" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/poep_resultaten_time"
+        android:id="@+id/textResultaatPoeptime"
         android:text="Time"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -33,11 +33,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/poep_resultaten_date"
+        android:id="@+id/textResultaatPoepdate"
         android:text="Date"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/poep_resultaten_del"
-        android:layout_toEndOf="@+id/poep_resultaten_del"
         android:layout_marginLeft="47dp"
         android:layout_marginStart="47dp" />
 </RelativeLayout>

@@ -85,10 +85,10 @@ public class ResultatenPoepAdapter extends RecyclerView.Adapter<ResultatenPoepAd
             super(v);
             // get the vieuws
             poepResultaatView = v.findViewById(R.id.item_resultaat_poep);
-            iconImageView = (ImageView) v.findViewById(R.id.poep_resultaten_del);
-            itemPoepTime = (TextView) v.findViewById(R.id.poep_resultaten_time);
-            itemPoepDate = (TextView) v.findViewById(R.id.poep_resultaten_date);
-            itemPoepComments = (TextView) v.findViewById(R.id.poep_resultaten_comments);
+            iconImageView = (ImageView) v.findViewById(R.id.resultaatPoepDel);
+            itemPoepTime = (TextView) v.findViewById(R.id.textResultaatPoeptime);
+            itemPoepDate = (TextView) v.findViewById(R.id.textResultaatPoepdate);
+            itemPoepComments = (TextView) v.findViewById(R.id.textResultaatPoepcomments);
             // register listener
             iconImageView.setOnClickListener(listener);
         }
